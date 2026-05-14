@@ -121,6 +121,39 @@ Tarayıcıda (http://127.0.0.1:7860) adresini aç.
 
 ---
 
+## 📥 Model Ağırlıklarını İndir
+
+Eğitilmiş model Google Drive'da mevcuttur:
+
+**👉 [best_model.pth — Google Drive'dan İndir](https://drive.google.com/file/d/1g1OuKx9qTbXgoI_SJzEFd4UxcU96y_LU/view?usp=sharing)**
+
+İndirdikten sonra şuraya koy:
+```
+C:\skin_segmentation\checkpoints\best_model.pth
+```
+
+---
+
+## 🚀 Kullanım
+
+### Arayüzü Çalıştır (Hazır Model ile)
+
+`checkpoints/best_model.pth` dosyası mevcutsa doğrudan arayüzü başlatabilirsiniz:
+
+```bash
+cd C:\skin_segmentation
+python app/app.py
+```
+
+Tarayıcıda [http://127.0.0.1:7860](http://127.0.0.1:7860) adresini aç.
+
+**Kullanım:**
+1. "Deri Görüntüsü Yükle" alanına bir dermoskopi fotoğrafı yükle
+2. "Analiz Et" butonuna bas
+3. Sonuçları gör: overlay, maske, güven skoru ve LLM yorumu
+
+---
+
 ### Modeli Eğit (Opsiyonel)
 
 Veri seti hazırsa eğitimi başlatmak için:
@@ -212,5 +245,3 @@ Sistem Ollama + Llama 3.1:8b ile yerel yapay zeka yorumu üretir:
 - Türkçe genel değerlendirme
 - Risk düzeyi: Düşük / Orta / Yüksek
 - Klinik öneri
-
----

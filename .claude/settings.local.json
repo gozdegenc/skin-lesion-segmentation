@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(python -c \"import gradio as gr; print\\(dir\\(gr.themes\\)\\)\")"
-    ]
-  }
-}
